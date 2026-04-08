@@ -10,7 +10,7 @@
 
      <title>Aşkım Canım Sevgilim</title>
 
-     <link rel="stylesheet" href="assets/index.css">
+     <link rel="stylesheet" href="index.css">
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -19,167 +19,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poller+One&family=Roboto+Slab:wght@100..900&display=swap"
           rel="stylesheet">
 
-     <style>
-          * {
-               margin: 0;
-               padding: 0;
-               box-sizing: border-box;
-          }
-
-          body {
-               font-family: "Inter", sans-serif;
-               background-color: pink;
-               color: #cc0044;
-          }
-
-          .header {
-               width: 100%;
-               text-align: center;
-               background-color: pink;
-               padding: 40px 20px;
-          }
-
-          .header h1 {
-               font-family: "Poller One", sans-serif;
-               font-weight: 400;
-               font-size: 32px;
-               color: #cc0044;
-          }
-
-          .content-block {
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               padding: 40px 20px;
-               gap: 40px;
-               flex-wrap: wrap;
-          }
-
-          .content-block.reverse {
-               flex-direction: row-reverse;
-          }
-
-          .content-img,
-          .content-text {
-               flex: 1 1 400px;
-               max-width: 500px;
-          }
-
-          .content-img img {
-               width: 100%;
-               border-radius: 50px;
-               display: block;
-          }
-
-          .content-text h2 {
-               font-family: "Roboto Slab", serif;
-               font-size: 24px;
-               margin-bottom: 20px;
-               text-align: center;
-          }
-
-          .content-text p {
-               font-size: 16px;
-               line-height: 1.6;
-               text-align: justify;
-          }
-
-          .gallery-header {
-               text-align: center;
-               padding: 50px 20px 20px 20px;
-               background-color: pink;
-          }
-
-          .gallery-header h1 {
-               font-size: 36px;
-               color: #cc0044;
-          }
-
-          .gallery {
-               display: grid;
-               grid-template-columns: repeat(2, 1fr);
-               gap: 20px;
-               width: 90%;
-               max-width: 1000px;
-               margin: 40px auto;
-          }
-
-          .gallery-item img {
-               width: 100%;
-               border-radius: 20px;
-               object-fit: cover;
-               transition: transform 0.3s, box-shadow 0.3s;
-          }
-
-          .gallery-item img:hover {
-               transform: scale(1.05);
-               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-          }
-
-          @media (max-width: 1024px) {
-               .content-block {
-                    gap: 30px;
-                    padding: 30px 15px;
-               }
-
-               .content-text h2 {
-                    font-size: 22px;
-               }
-
-               .content-text p {
-                    font-size: 15px;
-               }
-          }
-
-          @media (max-width: 768px) {
-               .content-block {
-                    flex-direction: column;
-                    gap: 20px;
-               }
-
-               .content-text h2 {
-                    font-size: 20px;
-               }
-
-               .content-text p {
-                    font-size: 14px;
-               }
-
-               .gallery {
-                    grid-template-columns: 1fr;
-                    gap: 15px;
-               }
-
-               .gallery-header h1 {
-                    font-size: 28px;
-               }
-          }
-
-          @media (max-width: 480px) {
-               .header h1 {
-                    font-size: 24px;
-                    padding: 30px 10px;
-               }
-
-               .content-text h2 {
-                    font-size: 18px;
-               }
-
-               .content-text p {
-                    font-size: 13px;
-               }
-
-               .content-img img {
-                    border-radius: 30px;
-               }
-
-               .gallery-header h1 {
-                    font-size: 24px;
-                    padding: 30px 10px 15px 10px;
-               }
-          }
-     </style>
-
+     
 </head>
 
 <body>
@@ -194,7 +34,7 @@
 
           <div class="content-img">
 
-               <img src="https://smtardaa.github.io/images2/foto-1.jpeg" alt="Sevgilimle 1">
+               <img src="foto-1.jpeg" alt="Sevgilimle 1">
 
           </div>
 
@@ -222,7 +62,7 @@
 
           <div class="content-img">
 
-               <img src="http://github.com/smtardaa/images2/blob/main/foto-1.jpeg?raw=true" alt="Sevgilimle 2">
+               <img src="foto-2.jpeg" alt="Sevgilimle 2">
 
           </div>
 
@@ -251,40 +91,40 @@
 
      <section class="gallery">
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-3.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-3.jpeg"
                     alt="Fotoğraf 1"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-4.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-4.jpeg"
                     alt="Fotoğraf 2"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-5.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-5.jpeg"
                     alt="Fotoğraf 3"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-6.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-6.jpeg"
                     alt="Fotoğraf 4"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-7.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-7.jpeg"
                     alt="Fotoğraf 5"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-8.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-8.jpeg"
                     alt="Fotoğraf 6"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-9.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-9.jpeg"
                     alt="Fotoğraf 7"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-10.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-10.jpeg"
                     alt="Fotoğraf 8"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-11.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-11.jpeg"
                     alt="Fotoğraf 9"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-12.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-12.jpeg"
                     alt="Fotoğraf 10"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-13.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-13.jpeg"
                     alt="Fotoğraf 11"></div>
 
-          <div class="gallery-item"><img src="https://github.com/smtardaa/images2/blob/main/foto-14.jpeg?raw=true"
+          <div class="gallery-item"><img src="foto-14.jpeg"
                     alt="Fotoğraf 12"></div>
 
      </section>
