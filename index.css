@@ -1,0 +1,158 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: "Inter", sans-serif;
+     background-color: pink;
+     color: #cc0044;
+}
+
+.header {
+     width: 100%;
+     text-align: center;
+     background-color: pink;
+     padding: 40px 20px;
+}
+
+.header h1 {
+     font-family: "Poller One", sans-serif;
+     font-weight: 400;
+     font-size: 32px;
+     color: #cc0044;
+}
+
+.content-block {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 20px;
+     gap: 40px;
+     flex-wrap: wrap;
+}
+
+.content-block.reverse {
+     flex-direction: row-reverse;
+}
+
+.content-img,
+.content-text {
+     flex: 1 1 400px;
+     max-width: 500px;
+}
+
+.content-img img {
+     width: 100%;
+     border-radius: 50px;
+     display: block;
+}
+
+.content-text h2 {
+     font-family: "Roboto Slab", serif;
+     font-size: 24px;
+     margin-bottom: 20px;
+     text-align: center;
+}
+
+.content-text p {
+     font-size: 16px;
+     line-height: 1.6;
+     text-align: justify;
+}
+
+.gallery-header {
+     text-align: center;
+     padding: 50px 20px 20px 20px;
+     background-color: pink;
+}
+
+.gallery-header h1 {
+     font-size: 36px;
+     color: #cc0044;
+}
+
+.gallery {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     width: 90%;
+     max-width: 1000px;
+     margin: 40px auto;
+}
+
+.gallery-item img {
+     width: 100%;
+     border-radius: 20px;
+     object-fit: cover;
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+     .content-block {
+          gap: 30px;
+          padding: 30px 15px;
+     }
+
+     .content-text h2 {
+          font-size: 22px;
+     }
+
+     .content-text p {
+          font-size: 15px;
+     }
+}
+
+@media (max-width: 768px) {
+     .content-block {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     .content-text h2 {
+          font-size: 20px;
+     }
+
+     .content-text p {
+          font-size: 14px;
+     }
+
+     .gallery {
+          grid-template-columns: 1fr;
+          gap: 15px;
+     }
+
+     .gallery-header h1 {
+          font-size: 28px;
+     }
+}
+
+@media (max-width: 480px) {
+     .header h1 {
+          font-size: 24px;
+          padding: 30px 10px;
+     }
+
+     .content-text h2 {
+          font-size: 18px;
+     }
+
+     .content-text p {
+          font-size: 13px;
+     }
+
+     .content-img img {
+          border-radius: 30px;
+     }
+
+     .gallery-header h1 {
+          font-size: 24px;
+          padding: 30px 10px 15px 10px;
+     }
+}
