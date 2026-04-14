@@ -24,6 +24,41 @@ body {
      color: #cc0044;
 }
 
+.wp-container {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     align-items: center;
+}
+
+.wp-btn {
+     width: 220px;
+     text-align: center;
+     padding: 14px 20px;
+     border-radius: 10px;
+     font-family: Arial, sans-serif;
+     font-size: 14px;
+     text-decoration: none;
+     color: white;
+     transition: 0.3s;
+     letter-spacing: 0.5px;
+}
+
+.wp1 {
+     background: #cc0044;
+     box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+}
+
+.wp2 {
+     background: #cc0044;
+     box-shadow: 0 0 15px rgba(18, 140, 126, 0.4);
+}
+
+.wp-btn:hover {
+     transform: scale(1.05);
+     filter: brightness(1.1);
+}
+
 .content-block {
      display: flex;
      justify-content: center;
@@ -94,7 +129,7 @@ body {
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.end{
+.end {
      width: 100%;
      display: flex;
      justify-content: center;
@@ -105,7 +140,7 @@ body {
      font-size: 22px;
 }
 
-.end-content{
+.end-content {
      width: 50%;
      text-align: center;
      padding: 40px;
@@ -173,13 +208,13 @@ body {
           padding: 30px 10px 15px 10px;
      }
 
-     .end-content{
+     .end-content {
           width: 100%;
           padding: 20px;
           font-size: 13px;
      }
 
-     .end-content h2{
+     .end-content h2 {
           font-size: 20px;
      }
 }
